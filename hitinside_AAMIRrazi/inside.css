@@ -1,0 +1,467 @@
+/* AAMIR RAZI */
+body {
+    color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Karla', sans-serif;
+    background-color: maroon;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* navbar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+/* logo nd image */
+#logo {
+    margin: 2px 4px;
+    display: inline-block;
+        /* position: absolute; */
+        left: 46px;
+        top: 20px;
+        text-align: center;
+        line-height: 20px;
+}
+
+#logo img {
+    height: 80px;
+    margin: 27px 30px;
+    border-radius: 79px;
+}
+
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    font-family: 'Baloo Bhai 2', cursive;
+
+
+}
+
+#navbar ul li {
+    font-size: 1.23rem;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 29px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: aliceblue;
+
+}
+
+/* social media wrappar */
+.wrapper {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.wrapper .button {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #b78282;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+.wrapper .button a{
+    text-decoration: none;
+}
+
+.wrapper .button:hover {
+    width: 200px;
+    background-color: wheat;
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+    background: #4267B2;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+    background: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+    background: #E1306C;
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+    background: #2b2b2b;
+}
+
+.wrapper .button:nth-child(5):hover .icon {
+    background: #ff0000;
+}
+
+.wrapper .button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i {
+    color: #fff;
+}
+
+.wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span {
+    color: #4267B2;
+}
+
+.wrapper .button:nth-child(2) span {
+    color: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3) span {
+    color: #E1306C;
+}
+
+.wrapper .button:nth-child(4) span {
+    color: #333;
+}
+
+.wrapper .button:nth-child(5) span {
+    color: #ff0000;
+}
+
+/* services center */
+#services {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 1rem;
+    grid-auto-rows: 2fr;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 40px;
+    margin: 24px 12px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    background-color: rgb(204, 83, 83);
+}
+
+#services h1 {
+    font-size: 46px;
+    
+}
+
+#services .box p {
+    font-family: 'Golos Text', 'Source Sans Pro', sans-serif;
+    font-size: 1.15rem;
+
+}
+
+.h-secondary {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.9rem;
+    text-align: center;
+    padding: 10px;
+    margin: 4px;
+}
+
+
+.form {
+    
+    border-radius: 29px;
+    margin: 14px;
+    background-color: rgb(20, 19, 19);
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    ;
+}
+
+
+.form a {
+    color: bisque;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 23px;
+}
+
+.form a:hover,
+.form a.active {
+    background-color: rgb(195, 177, 177);
+    /* text-decoration: underline; */
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    margin: 4px;
+}
+
+/* media */
+.media {
+    display: grid;
+    grid-gap: 1rem;
+    background-color: #d1698c;
+
+}
+
+
+
+#merchandise {
+
+    margin: 45px 45px;
+    padding: 33px;
+    width: 24rem;
+    height: 32rem;
+    border-radius: 39px;
+    
+    background-color: #fff;
+    background: url(./image/merch.jpg)no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.74;
+
+}
+
+#merchandise li a {
+    color: bisque;
+    display: block;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 3px 34px;
+}
+
+#merchandise h1 {
+    text-shadow: 5px 2px #ffffff;
+    color: rgb(37, 26, 186);
+}
+
+.shop {
+    /* border: 1px solid black; */
+    border-radius: 29px;
+    padding: 12px;
+    margin: 4px;
+    background-color: rgb(20, 19, 19);
+    display: inline-block;
+    font-size: 1.2rem;
+    ;
+}
+
+
+.shop a {
+    color: bisque;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.shop a:hover,
+.shop a.active {
+    background-color: rgb(195, 177, 177);
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    margin: 4px;
+}
+
+#connect {
+    padding: 23px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 9px;
+    background-color: rgb(192, 106, 106);
+    
+    margin: 45px 45px;
+    padding: 33px;
+    width: 24rem;
+    height: 32rem;
+    border-radius: 39px;
+
+}
+
+.form-group input,
+.form-group textarea {
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    width: 330px;
+    border-radius: 6px;
+    padding: 2px;
+    border: 2px solid black;
+    margin: 13px auto;
+    font-family: 'Baloo Bhai 2', cursive;
+
+
+}
+
+#connect h1 {
+    text-align: center;
+}
+
+#connect button {
+    display: block;
+    width: 95px;
+    margin: 2px auto;
+}
+
+.btn {
+    margin: 0px 8px;
+    color: aliceblue;
+    background-color: black;
+    padding: 3px 14px;
+    border: 2px solid grey;
+    border-radius: 116px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(103, 16, 16);
+}
+
+/* connect */
+.end {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+/* gallery */
+
+#gallery {
+    background-color: rgb(200, 102, 102);
+    border-radius: 23px;
+    padding: 3px;
+    margin: 2px 12px;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 1.3rem 1.3rem;
+    grid-template-columns: repeat(3, auto);
+
+}
+
+.img-box {
+
+    border: 2px solid gray;
+    height: 30rem;
+    border-radius: 9px;
+
+    background-color: red;
+    margin: 7px;
+
+
+
+}
+
+.img-box:first-child {
+    background: url(./image/pic1.jpg)no-repeat center center/cover;
+
+}
+
+.img-box:nth-child(2) {
+    background: url(./image/pic2.jpg)no-repeat center center/cover;
+
+}
+
+.img-box:nth-child(3) {
+    background: url(./image/pic3.jpg)no-repeat center center/cover;
+
+}
+
+.img-box:nth-child(4) {
+    background: url(./image/pic6.jpg)no-repeat center center/cover;
+
+}
+
+.img-box:nth-child(5) {
+    background: url(./image/pic5.jpg)no-repeat center center/cover;
+
+}
+
+.img-box:nth-child(6) {
+    background: url(./image/pic10.jpg)no-repeat center center/cover;
+
+}
+
+.img-box:nth-child(7) {
+    background: url(./image/pic7.jpg)no-repeat center center/cover;
+
+}
+
+.img-box:nth-child(8) {
+    background: url(./image/pic8.jpg)no-repeat center center/cover;
+
+}
+
+.img-box:nth-child(9) {
+    background: url(./image/pic9.jpg)no-repeat center center/cover;
+
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+}
+/* footer */
+footer{
+    padding: 21px;
+    margin: 13px 11px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 22px;
+    background-color: rgb(203 98 98); 
+}
+
+/* media queries */
+@media only screen and (max-width:1050px) {
+    #navbar{
+        flex-direction :column;
+        font-size: 0.9rem;
+    }
+    #services{
+        grid-template-columns: auto;
+    }
+    .img-box{
+       height: 240px;
+    }
+}
