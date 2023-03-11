@@ -37,7 +37,7 @@ html {
 
 
 #navbar ul {
-    display: flex;
+    display: contents;
     list-style: none;
     font-family: 'Baloo Bhai 2', cursive;
 
@@ -463,5 +463,20 @@ footer{
     }
     .img-box{
        height: 240px;
+    }
+    .end{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:750px){
+    .grid{
+        
+        grid-template-columns: repeat(2, auto);
+    }
+}
+@media only screen and (max-width:510px){
+    .grid{
+        grid-template-columns: repeat(1, auto);
+
     }
 }
